@@ -1,4 +1,5 @@
 EJERCICIO 1 (ej1.psc)
+---
 
 Escribe un algoritmo que calcule el sueldo semanal de un trabajador teniendo en cuenta lo siguiente:
 
@@ -15,7 +16,7 @@ Introduzca el número de horas trabajadas durante la semana: 50
 El sueldo semanal que le corresponde es de 550
 
 EJERCICIO 2 (ej2.psc)
-
+---
 Escribe un programa que cambie un dígito dentro de un número dando la posición y el valor nuevo. Las posiciones se cuentan de izquierda a derecha empezando por el 1.
 
 Ejemplo:
@@ -29,7 +30,7 @@ El número resultante es 123476
 NOTA: Una pista, utilizar las funciones para texto que nos proporciona pseint
 
 EJERCICIO 3 (ej3.psc)
-
+---
 Realiza un programa que pinte un reloj de arena relleno hecho de asteriscos. El programa debe pedir la altura. Se debe comprobar que la altura sea un número impar mayor o igual a 3, en caso contrario se debe mostrar un mensaje de error.
 
 Ejemplo:
@@ -47,7 +48,7 @@ Por favor, introduzca la altura del reloj de arena: 7
 *******
 
 EJERCICIO 4 (ej4.psc)
-
+---
 Escribe un programa que rellene un array de 20 elementos con números enteros aleatorios comprendidos entre 0 y 400 (ambos incluidos). A continuación el programa mostrará el array y preguntará si el usuario quiere resaltar los múltiplos de 5 o los múltiplos de 7. Seguidamente se volverá a mostrar el array escribiendo los números que se quieren resaltar entre corchetes.
 
 
@@ -59,7 +60,7 @@ Ejemplo:
 NOTA: Utilizar las funciones de pseint para generar los número aleatorios
 
 EJERCICIO 5 (ej5.psc)
-
+---
 Realizar un algoritmo que contenga dos funciones para trabajar con vectores (arrays).
 
 - contiene. Recibirá dos parámetros, un array de enteros y un entero a buscar. Devolverá verdaderos si el entero está en el vector y falso en caso contrario.
