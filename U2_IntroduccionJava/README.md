@@ -1,3 +1,3 @@
-# U3_Introducción a Java
+# U2_Introducción a Java
 
 Usamos IntelliJ IDEA
