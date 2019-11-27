@@ -1,6 +1,7 @@
-U3 - Entregable_1920
+# U3 - Entregable_1920
 
-Ejercicio 1
+## _Ejercicio 1_
+---
 
 Un restaurante nos ha encargado una aplicación para colocar a los clientes en
 sus mesas. En una mesa se pueden sentar de 0 (mesa vacía) a 4 comensales
@@ -17,7 +18,7 @@ nuevos clientes se debe mostrar el estado de las mesas. Los grupos no se
 pueden romper aunque haya huecos sueltos suficientes. El funcionamiento del
 programa se ilustra a continuación:
 
-Ejemplo:
+> Ejemplo:
 ┌─────────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
 │Mesa no  │  1 │  2 │  3 │  4 │  5 │  6 │  7 │  8 │  9 │ 10 │
 ├─────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
@@ -54,19 +55,20 @@ Lo siento, en estos momentos no queda sitio.
 ¿Cuántos son? (Introduzca -1 para salir del programa): -1
 Gracias. Hasta pronto.
 
-Ejercicio 2
+## _Ejercicio 2_
+---
 
-Escribe un programa que pida 20 números enteros. Estos números se deben
-introducir en un array de 4 filas por 5 columnas. El programa mostrará las
-sumas parciales de filas y columnas igual que si de una hoja de cálculo se
+Escribe un programa que pida 20 números enteros. Estos números se deben introducir en un array de 4 filas por 5 columnas. El programa mostrará las sumas parciales de filas y columnas igual que si de una hoja de cálculo se
 tratara. La suma total debe aparecer en la esquina inferior derecha.
 
-Ejercicio 3
+## _Ejercicio 3_
 
 Crea la función de manejo de arrays que tenga la siguiente cabecera y que haga
 lo que se especifica en los comentarios:
 
-public int[] filtraCon7(int x[]) // Devuelve un array con todos los números
+* public int[] filtraCon7(int x[]) 
+  
+// Devuelve un array con todos los números
                                  // que contienen el 7 (por ej. 7, 27, 782)
                                  // que se encuentren en otro array que se
                                  // pasa como parámetro. El tamaño del array
