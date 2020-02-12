@@ -1,7 +1,7 @@
-U4_U5_Examen_1920_Turno_Mañana
+## U4_U5_Examen_1920_Turno_Mañana
 
 EXAMEN UNIDADES 4 y 5_CURSO 19-20 TURNO MAÑANA
-
+--
 Debemos crear una clase RPG. Esta clase contendrá una LISTA de Personajes que gestionará y que nunca podrá exceder de 10.
 
 Los Personajes son una clase no instanciable de los que guardaré:
