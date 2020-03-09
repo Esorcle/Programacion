@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -11,15 +12,18 @@ public class RPG {
     private Personaje[] personajes;
     private int numPersonaje;
 
+
     /**
-     * Constructor clase RPG
+     * Con ArrayList add
      */
-    public RPG() {
-        this.numPersonaje = 0 ;
-        this.personajes = new Personaje[numPersonaje];
 
+    ArrayList <Personaje> listaPersonajes = new ArrayList<>();
+    public boolean addListaPersonaje(Personaje p) {
+        if(listaPersonajes.size()<=10){
+            return listaPersonajes.add(p);
+        }
+        return  false;
     }
-
 
 
     /**

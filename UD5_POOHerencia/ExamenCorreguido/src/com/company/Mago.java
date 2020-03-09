@@ -35,4 +35,13 @@ public class Mago extends Hombre implements Magia {
         this.setEncantado(Encantado.NO);
 
     }
+
+
+    public double getLongBarba() {
+        return longBarba;
+    }
+
+    public void setLongBarba(double longBarba) {
+        this.longBarba = longBarba;
+    }
 }
