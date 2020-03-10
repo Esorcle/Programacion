@@ -1,23 +1,0 @@
-
-Isquid:S1481"+Remove this unused "perro4" local variable.(í×ı8Õòê¡Œ.
-Wsquid:S1854":Remove this useless assignment to local variable "perro8".(¤ãÇG8Õòê¡Œ.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÑØ²Şûÿÿÿÿ8ßè’¥Œ.
-]squid:S1854":Remove this useless assignment to local variable "perro6".(¦£óŸşÿÿÿÿ8Õòê¡Œ.
-Xsquid:S1854":Remove this useless assignment to local variable "perro4".(í×ı8Õòê¡Œ.
-Xsquid:S1854":Remove this useless assignment to local variable "perro9".(‚¶ì¤8Õòê¡Œ.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÒÀš—üÿÿÿÿ8ƒ’¥Œ.
-]squid:S1854":Remove this useless assignment to local variable "perro2".(œèî‹úÿÿÿÿ8Õòê¡Œ.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ñÕéúùÿÿÿÿ8ÈÎ”¥Œ.
-[
-squid:S106""9Replace this use of System.out or System.err by a logger.(ŠÉ»ªùÿÿÿÿ8ßÖ–¥Œ.
-Nsquid:S1481"+Remove this unused "perro6" local variable.(¦£óŸşÿÿÿÿ8Õòê¡Œ.
-]squid:S1854":Remove this useless assignment to local variable "perro3".(›áÉ¢ùÿÿÿÿ8Õòê¡Œ.
-Isquid:S1481"+Remove this unused "perro9" local variable.(‚¶ì¤8Õòê¡Œ.
-V
-squid:S106 "9Replace this use of System.out or System.err by a logger.(ÓãÉÎ8ÈÎ”¥Œ.
-Nsquid:S1481"+Remove this unused "perro3" local variable.(›áÉ¢ùÿÿÿÿ8Õòê¡Œ.
-Hsquid:S1481"+Remove this unused "perro8" local variable.(¤ãÇG8Õòê¡Œ.
-Nsquid:S1481"+Remove this unused "perro2" local variable.(œèî‹úÿÿÿÿ8Õòê¡Œ.
