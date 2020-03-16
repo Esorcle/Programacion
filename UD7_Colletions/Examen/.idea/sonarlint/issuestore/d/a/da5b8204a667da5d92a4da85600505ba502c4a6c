@@ -1,0 +1,15 @@
+
+dsquid:S2147”"ECombine this catch with the one at line 146, which has the same body.(ï­£Ä8«Ä®Œ.
+Ksquid:S1604Y"(Make this anonymous inner class a lambda(ª›¸ºøÿÿÿÿ8«Ä®Œ.
+Msquid:S2093q"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8£çµ®Œ.
+=squid:S1640"Convert this Map to an EnumMap.(öáº¹8«Ä®Œ.
+Gsquid:S1148“"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«Ä®Œ.
+_squid:S2118y"AMake the "com.fany.Perro" class "Serializable" or don't write it.(ì‚÷Ø8«Ä®Œ.
+Nsquid:S2093‹"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8«Ä®Œ.
+Fsquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8«Ä®Œ.
+Ksquid:S1604e"(Make this anonymous inner class a lambda(ª›¸ºøÿÿÿÿ8«Ä®Œ.
+dsquid:S2147–"ECombine this catch with the one at line 146, which has the same body.(ıàÑÎ8«Ä®Œ.
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«Ä®Œ.
+Gsquid:S1148•"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«Ä®Œ.
+Nsquid:S1948"0Make "concursoPerros" transient or serializable.(Î§Š°8íÚÁ®Œ.
+Gsquid:S1148—"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8«Ä®Œ.

@@ -1,8 +1,10 @@
 package com.fany;
 
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Propietario prop1 = new Propietario("Fany", "Ortiz", 3467, "España");
         Propietario prop2 = new Propietario("Jorge", "Collero", 7346, "Francia");
@@ -20,11 +22,7 @@ public class Main {
         Perro perro10 = new Perro("Rudolf", 9, 21.54, Perro.Vacuna.SI, prop1, Perro.Raza.HUSKY);
 
 
-        Concurso concurso = new Concurso("Velocity", "Sevilla");
-
-        concurso.asignarSetRaza(Perro.Raza.HUSKY);
-        concurso.asignarSetRaza(Perro.Raza.LABRADOR);
-        concurso.asignarSetRaza(Perro.Raza.PASTORALEMAN);
+        ConcursoCorreguido concurso = new ConcursoCorreguido("Velocity", "Sevilla");
 
         System.out.println(concurso.addDog(Perro.Raza.PASTORALEMAN, perro1));
         System.out.println(concurso.addDog(Perro.Raza.PASTORALEMAN, perro5));
@@ -33,6 +31,14 @@ public class Main {
 
         System.out.println(concurso.disqualifyDog(perro7));
 
+        System.out.println(concurso.perrosPorPeso(Perro.Raza.HUSKY));
+
+        System.out.println(concurso.perrosporEdad(Perro.Raza.LABRADOR));
+
+
+        concurso.guardarPerros();
+
+        concurso.cargarPerros();
 
     }
 }

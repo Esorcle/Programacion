@@ -1,6 +1,8 @@
 package com.fany;
 
-public class Propietario {
+import java.io.Serializable;
+
+public class Propietario implements Serializable {
 
     /**
      * Atributos clase Propietario

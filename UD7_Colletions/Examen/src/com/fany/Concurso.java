@@ -67,6 +67,7 @@ public class Concurso implements Serializable {
 
     /**
      * Método para eliminar un perro del concurso
+     *
      * @param perro
      * @return
      */
@@ -94,18 +95,18 @@ public class Concurso implements Serializable {
      * @param raza
      */
     public void perrosporPeso(Perro.Raza raza) {
-       ArrayList<Perro> aux = (ArrayList<Perro>) asignarSetRaza(raza);
+        ArrayList<Perro> aux = (ArrayList<Perro>) asignarSetRaza(raza);
         Collections.sort(aux, new Comparator<Perro>() {
             @Override
             public int compare(Perro perro, Perro t1) {
                 return Double.compare(perro.getPeso(), t1.getPeso());
             }
         });
-        }
+    }
 
 
     public void perrosporEdad(Perro.Raza raza) {
-        ArrayList<Perro> aux = (ArrayList<Perro>)asignarSetRaza(raza);
+        ArrayList<Perro> aux = (ArrayList<Perro>) asignarSetRaza(raza);
         Collections.sort(aux, new Comparator<Perro>() {
             @Override
             public int compare(Perro perro, Perro t1) {
@@ -118,18 +119,19 @@ public class Concurso implements Serializable {
     public Set asignarSetRaza(Perro.Raza raza) {
         Set<Perro> aux;
         if (raza.equals(Perro.Raza.HUSKY)) {
-            aux =  this.conjuntoPerrosHusky;
+            aux = this.conjuntoPerrosHusky;
             concursoPerros.put(Perro.Raza.HUSKY, aux);
         } else if (raza.equals(Perro.Raza.LABRADOR)) {
-            aux =  this.conjuntoPerrosLabrador;
+            aux = this.conjuntoPerrosLabrador;
             concursoPerros.put(Perro.Raza.LABRADOR, aux);
         } else {
-            aux =  this.conjuntoPerrosPastor;
+            aux = this.conjuntoPerrosPastor;
             concursoPerros.put(Perro.Raza.LABRADOR, aux);
         }
         return aux;
     }
-
+}
+/*
     public void guardarPerros() {
         try {
             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("perros.dat")) {
@@ -182,3 +184,4 @@ public class Concurso implements Serializable {
     }
 
 }
+*/

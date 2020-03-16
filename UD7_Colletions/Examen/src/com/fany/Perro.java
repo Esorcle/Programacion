@@ -1,6 +1,8 @@
 package com.fany;
 
-public class Perro {
+import java.io.Serializable;
+
+public class Perro implements Serializable {
 
     /**atributos clase Perro
      *
