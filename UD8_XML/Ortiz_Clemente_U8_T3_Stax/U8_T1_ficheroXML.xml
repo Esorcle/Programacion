@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Prçologo -->
+<animales><!-- Elemento raíz -->
+    <animal id="1">
+        <raza>Persa</raza>
+        <nombre>Zoe</nombre>
+        <edad unidad="año">2</edad>
+    </animal>
+    <animal id="2">
+        <raza>Labrador</raza>
+        <nombre>Thais</nombre>
+        <edad unidad="año">7</edad>
+    </animal>
+    <persona id="3">
+        <nombre>Fany</nombre>
+        <edad unidad="año">32</edad>
+    </persona>
+    <persona id="4">
+        <nombre>Antonio</nombre>
+        <edad unidad="año">37</edad>
+    </persona>
+    <animal id="5"><nombre>Pelusa</nombre></animal>
+    <animal id="6">
+        <raza></raza>
+    </animal>
+</animales>
