@@ -11,7 +11,7 @@ public class ConexionBD {
             if( connection== null ){
                // String driver="com.mysql.jdbc.Driver"; //el driver varia segun la DB que usemos
                 String url="jdbc:mysql://localhost/classicmodels?autoReconnect=true";
-                String pwd="976431Fy++";
+                String pwd="pass";
                 String usr="Fany";
               //  Class.forName(driver);
                 connection= DriverManager.getConnection(url,usr,pwd);
