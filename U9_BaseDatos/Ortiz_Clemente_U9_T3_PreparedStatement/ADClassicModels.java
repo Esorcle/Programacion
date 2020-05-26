@@ -34,6 +34,13 @@ public class ADClassicModels {
                 //Si no exixte, continuo
             } else {
 
+                //Compruebo si el vendedor exite
+                String sqlExistSalesID = "SELECT employeeNumber FROM employees WHERE employeeNumber = ?";
+                PreparedStatement stExistSalesID = connection.prepareStatement(sqlExistSalesID);
+                stExistSalesID.setInt(1, customer.getSalesRepEmployeeNumber());
+                ResultSet rsExistSalesID = stExistSalesID.executeQuery();
+
+                if (rsExistSalesID.next()) {
                 /*Obtengo el número del último cliente
                 String sqlCustomerNumber = "SELECT customerNumber FROM customers ORDER BY customerNumber DESC LIMIT 1";
                 PreparedStatement statementCustomerNumber = connection.prepareStatement(sqlCustomerNumber);
@@ -42,54 +49,57 @@ public class ADClassicModels {
                 if (rsCustomerNumber.next()) {
                     customerNumber = rsCustomerNumber.getInt("CustomerNumber");*/
 
-                //Creo la sentencia SQL
-                String sqlInsertCustomer = "INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName," +
-                        "phone, addressLine1, addressLine2, city, state, postalCode, country, creditLimit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                    //Creo la sentencia SQL
+                    String sqlInsertCustomer = "INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName," +
+                            "phone, addressLine1, addressLine2, city, state, postalCode, country, creditLimit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-                PreparedStatement statement = connection.prepareStatement(sqlInsertCustomer);
+                    PreparedStatement statement = connection.prepareStatement(sqlInsertCustomer);
 
-                statement.setInt(1, customer.getCustomerNumber());
-                statement.setString(2, customer.getCustomerName());
-                statement.setString(3, customer.getContactLastName());
-                statement.setString(4, customer.getContactFirstName());
-                statement.setString(5, customer.getPhone());
-                statement.setString(6, customer.getAddressLine1());
+                    statement.setInt(1, customer.getCustomerNumber());
+                    statement.setString(2, customer.getCustomerName());
+                    statement.setString(3, customer.getContactLastName());
+                    statement.setString(4, customer.getContactFirstName());
+                    statement.setString(5, customer.getPhone());
+                    statement.setString(6, customer.getAddressLine1());
 
-                if ("".equals(customer.getAddressLine2())) {
-                    statement.setString(7, null);
-                } else {
-                    statement.setString(7, customer.getAddressLine2());
-                }
-                statement.setString(8, customer.getCity());
+                    if ("".equals(customer.getAddressLine2())) {
+                        statement.setString(7, null);
+                    } else {
+                        statement.setString(7, customer.getAddressLine2());
+                    }
+                    statement.setString(8, customer.getCity());
 
-                if ("".equals(customer.getState())) {
-                    statement.setString(9, null);
-                } else {
-                    statement.setString(9, customer.getState());
-                }
-                if ("".equals(customer.getPostalCode())) {
-                    statement.setString(10, null);
-                } else {
-                    statement.setString(10, customer.getPostalCode());
-                }
-                statement.setString(11, customer.getCountry());
-/*
+                    if ("".equals(customer.getState())) {
+                        statement.setString(9, null);
+                    } else {
+                        statement.setString(9, customer.getState());
+                    }
+                    if ("".equals(customer.getPostalCode())) {
+                        statement.setString(10, null);
+                    } else {
+                        statement.setString(10, customer.getPostalCode());
+                    }
+                    statement.setString(11, customer.getCountry());
+
                     if (customer.getSalesRepEmployeeNumber() == null) {
                         statement.setNull(12, Types.INTEGER);
                     } else {
                         statement.setInt(12, customer.getSalesRepEmployeeNumber());
                     }
-                    */
 
-                if ("".equals(customer.getCreditLimit())) {
-                    statement.setNull(12, Types.FLOAT);
+
+                    if ("".equals(customer.getCreditLimit())) {
+                        statement.setNull(12, Types.FLOAT);
+                    } else {
+                        statement.setFloat(12, customer.getCreditLimit());
+                    }
+
+                    int rs = statement.executeUpdate();
+                    if (rs != 0) {
+                        inserted = true;
+                    }
                 } else {
-                    statement.setFloat(12, customer.getCreditLimit());
-                }
-
-                int rs = statement.executeUpdate();
-                if (rs != 0) {
-                    inserted = true;
+                    throw new ClassicModelsException ("Error, el número de empleado no existe");
                 }
             }
         } catch (SQLException e) {
@@ -345,14 +355,6 @@ public class ADClassicModels {
 
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-        } finally {
-            try {
-                if (connection != null) {
-                    connection.close();
-                }
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            }
         }
         return employeeList;
     }
@@ -397,14 +399,6 @@ public class ADClassicModels {
 
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-        } finally {
-            try {
-                if (connection != null) {
-                    connection.close();
-                }
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            }
         }
         return officeList;
     }

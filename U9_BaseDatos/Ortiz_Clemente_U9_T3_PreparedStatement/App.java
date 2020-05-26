@@ -164,22 +164,21 @@ public class App {
         customer.setCountry(sc.nextLine());
         System.out.println("Dame creditLimit: ");
         String aux = sc.nextLine();
-        if("".equals(aux)){
+        if ("".equals(aux)) {
             customer.setCreditLimit(null);
         } else {
             Float aux2 = Float.parseFloat(aux);
             customer.setCreditLimit(aux2);
         }
-        /*
         System.out.println("Dame sales Employee Number: ");
-        String aux = sc.nextLine();
-        if("".equals(aux)){
+        aux = sc.nextLine();
+        if ("".equals(aux)) {
             customer.setSalesRepEmployeeNumber(null);
         } else {
             int aux2 = Integer.parseInt(aux);
             customer.setSalesRepEmployeeNumber(aux2);
         }
-*/
+
 
         return customer;
     }
